@@ -1,0 +1,163 @@
+.custom {
+    background: linear-gradient(90deg, #fff0fe, #f0fcff, #fafafa, #fffeeb);
+    height: 100vh;
+    display: flex;
+}
+
+.split {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side {
+    background-color: #000;
+}
+
+.logoAuth {
+    width: 60%;
+    height: auto;
+    max-width: 600px;
+
+}
+
+.right-side {
+    background-color: #ffffff0d;
+}
+
+.formulario {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); */
+}
+
+/* Input fields */
+.inputField {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.inputField:focus {
+    border-color: linear-gradient(90deg,#1f2937,#293647,#233043);
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+.inputCustom {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.submitButton {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: -webkit-linear-gradient(90deg,#0f1116,#1a1b22); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#0f1116,#1a1b22); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submitButton:hover {
+    background: -webkit-linear-gradient(90deg,#1f2937,#293647,#233043); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#1f2937,#293647,#233043); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.input-container {
+    position: relative;
+}
+
+.inputField {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.toggle-visibility {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2em; 
+    background: none;
+    border: none;
+}
+
+
+.router {
+    margin-top: 1em;
+}
+
+link, a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+@media (max-width: 768px) {
+    .custom {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        height: 100vh;
+    }
+    
+
+    .inputCustom {
+        margin-top: 1px;
+    }
+
+    .title {
+        display: none; 
+    }
+
+    .split {
+        width: 100%;
+        align-items: center; 
+        flex-direction: column; 
+        background: linear-gradient(90deg, #fff0fe, #f0fcff, #fafafa, #fffeeb);
+        padding:  5px 20px; 
+    }
+    
+    .logo {
+        margin-top: 5em; 
+        width: 50%; 
+        max-width: 200px;
+    }
+
+    .formulario {
+        width: 90%;
+        padding: 15px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .inputField {
+        padding: 5px; 
+    }
+
+    .submitButton {
+        margin-top: 20px; 
+        width: 100%; 
+    }
+}
